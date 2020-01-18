@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageVersion>1.0</PackageVersion>
+    <PackageId>downr-tools</PackageId>
+    <Title>downr templates</Title>
+    <Authors>Brady Gaster</Authors>
+    <Description>Templates to make it easier to blog using downr.</Description>
+    <PackageTags>dotnet-new;templates;downr</PackageTags>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="post\**\*" Exclude="post\**\bin\**;post\**\obj\**" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+</Project>
